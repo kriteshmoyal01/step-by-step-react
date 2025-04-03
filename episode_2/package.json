@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "this is react by kartik",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriteshmoyal01/step-by-step-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "kartik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kriteshmoyal01/step-by-step-react/issues"
+  },
+  "homepage": "https://github.com/kriteshmoyal01/step-by-step-react#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
