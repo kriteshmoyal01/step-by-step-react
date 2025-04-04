@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Ye meta tags better compatibility aur responsiveness ke liye hain -->
+    <!-- Meta tags for compatibility and responsiveness -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Yaha external CSS file include kar rahe hain -->
+    <!-- External CSS file -->
     <link rel="stylesheet" href="./index.css">
 
     <title>Namaste React</title>
 </head>
 <body>
-    <!-- Root div ke upar static content hai -->
-    <h1>Hello Top of Root</h1>
-
-    <!-- Ye div React ke liye hai, yaha React ka content render hoga -->
+    <!-- Root div for React -->
     <div id="root">
         <h1>Akshay is here!</h1>
     </div>
 
-    <!-- Root div ke neeche static content hai -->
-    <h1>Hello Below of Root</h1>
+    <!-- Correct script tag to include the React App -->
+    <script type="module" src="./App.js"></script>
 
-    <!-- React aur ReactDOM ko CDN se load kar rahe hain -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- External JavaScript file ko include kar rahe hain -->
-    <script src="./App.js"></script>
 </body>
 </html>
