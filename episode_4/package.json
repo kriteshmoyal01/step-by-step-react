@@ -1,0 +1,33 @@
+{
+  "name": "episode_3",
+  "version": "1.0.0",
+  "description": "this is kartik",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriteshmoyal01/step-by-step-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "kartik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kriteshmoyal01/step-by-step-react/issues"
+  },
+  "homepage": "https://github.com/kriteshmoyal01/step-by-step-react#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
