@@ -4,18 +4,22 @@
   "description": "this is kartik",
   "scripts": {
     "test": "jest",
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kriteshmoyal01/React_.git"
+    "url": "git+https://github.com/kriteshmoyal01/step-by-step-react.git"
   },
   "keywords": [
     "react"
   ],
   "author": "kartik",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kriteshmoyal01/step-by-step-react/issues"
+  },
+  "homepage": "https://github.com/kriteshmoyal01/step-by-step-react#readme",
   "devDependencies": {
     "parcel": "^2.14.4"
   },
