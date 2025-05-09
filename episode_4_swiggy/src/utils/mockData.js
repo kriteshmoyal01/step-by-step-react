@@ -1,6 +1,9 @@
 const resList = [
   {
     
+    // RestaurantList is JSON Data for displaying cards
+
+    
     type: "restaurant",
     data: {
       type: "F",
@@ -1815,5 +1818,6 @@ const resList = [
     },
     subtype: "basic",
   },
-  ];
+];
+
   export default resList;
