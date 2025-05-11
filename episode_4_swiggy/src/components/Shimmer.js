@@ -1,16 +1,12 @@
-
-
-// Shimmer card to display with animation
 const Shimmer = () => {
   return (
     <div className="shimmer-container">
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card "></div>
-      <div className="shimmer-card "></div>
+      {/* Rendering multiple shimmer cards */}
+      {Array(20).fill().map((_, index) => (
+        <div className="shimmer-card" key={index}></div>
+      ))}
     </div>
   );
 };
-
 
 export default Shimmer;
