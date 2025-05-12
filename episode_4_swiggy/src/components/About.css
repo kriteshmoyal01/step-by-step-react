@@ -1,0 +1,224 @@
+.about-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  color: #555;
+}
+
+.description, .developer-info p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* // contact info styling */
+/* General container for the contact section */
+.contact-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title for the Contact Section */
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Description text under the title */
+.contact-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* Individual form group with input */
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+/* Labels for form fields */
+.form-label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Input fields and text area */
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Make textarea resizable vertically */
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Button styling */
+.submit-button {
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+/* about.css */
+.error-container {
+  background-color: #f8d7da;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-heading {
+  font-size: 3rem;
+  color: #721c24;
+  margin-bottom: 10px;
+}
+
+.error-subheading {
+  font-size: 1.5rem;
+  color: #721c24;
+  margin-bottom: 20px;
+}
+
+.error-details {
+  background-color: #f5c6cb;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.error-details h3,
+.error-details h4 {
+  color: #721c24;
+  margin: 5px 0;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.error-btn {
+  padding: 10px 20px;
+  background-color: #721c24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.error-btn:hover {
+  background-color: #f5a2a2;
+}
+
+.error-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.error-link:hover {
+  background-color: #218838;
+}
+
+@media screen and (max-width: 600px) {
+  .error-container {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .error-heading {
+    font-size: 2rem;
+  }
+
+  .error-subheading {
+    font-size: 1.2rem;
+  }
+
+  .error-btn,
+  .error-link {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
