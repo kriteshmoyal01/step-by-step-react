@@ -1,11 +1,305 @@
 /* // Global styles */
+/* // Global styles */
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* // Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ececec;
+  border-radius: 8px;
+}
+
+/* // Header Left Section: Logo + Branding */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* // Header Right Section: Nav items */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-items li:hover {
+  color: rgb(192, 122, 122);
+  background-color: #abb9c0d1; /* Blue highlight on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 119, 182, 0.2); /* Soft shadow for cool effect */
+}
+
+/* // Restaurant Cards Container */
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* // Individual Restaurant Card */
+.res-card {
+  width: 260px;
+  border: 1px solid #e0e0e0;
+  margin: 15px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+  font-family: Arial, sans-serif;
+}
+
+.res-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.res-logo {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.res-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.cuisine {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* // Restaurant Info: rating, time, cost */
+.details {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rating {
+  background-color: #4caf50;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.dot {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.delivery {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* // Quick view link */
+.quick-view {
+  font-size: 13px;
+  color: #0077b6;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.quick-view:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* // Search and Filter Container */
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* // Search input box */
+.search {
+  width: 260px;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.search:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 6px rgba(243, 156, 18, 0.5);
+}
+
+/* // Common button style for filter/search buttons */
+.filter-btn {
+  background-color: #a5a8af;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.filter-btn:hover {
+  background-color: #0077b6;
+}
+
+/* // Login button */
+.login {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.login:hover {
+  background-color: #005b7f;
+  box-shadow: 0 0 4px 1px rgba(243, 156, 18, 0.3);
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* // Optional: Filter button alternative style (if used separately) */
+.filter {
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.filter:hover {
+  box-shadow: 0 0 4px 1px rgba(243, 156, 18, 0.3);
+}
+
+/* // Shimmer Effect Placeholder Card */
+.shimmer-card {
+  width: 260px;
+  height: 350px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    #f7f7f7 25%,
+    #e6e6e6 50%,
+    #f7f7f7 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Shimmer container layout */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/*
 body {
   margin: 0;
   background-color: white;
   font-family: sans-serif;
 }
 
-/* // Header Section */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -16,7 +310,7 @@ body {
   border: 1px solid black;
 }
 
-/* // Header Left Section: Logo + Branding */
+
 .left {
   display: flex;
   align-items: center;
@@ -41,7 +335,6 @@ body {
   color: #333;
 }
 
-/* // Header Right Section: Nav items */
 .right {
   display: flex;
   align-items: center;
@@ -67,14 +360,12 @@ body {
   font-weight: 500;
 }
 
-/* // Restaurant Cards Container */
 .res-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* // Individual Restaurant Card */
 .res-card {
   width: 250px;
   border: 1px solid #ddd;
@@ -110,7 +401,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* // Restaurant Info: rating, time, cost */
 .details {
   display: flex;
   align-items: center;
@@ -140,7 +430,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* // Quick view link */
 .quick-view {
   font-size: 12px;
   color: #007185;
@@ -154,7 +443,6 @@ body {
   transform: scale(1.03);
 }
 
-/* // Search and Filter Container */
 .search-filter-container {
   display: flex;
   align-items: center;
@@ -165,7 +453,6 @@ body {
   flex-wrap: wrap; 
   }
 
-/* // Search input box */
 .search {
   width: 250px;
   height: 40px;
@@ -184,7 +471,6 @@ body {
   box-shadow: 0 0 4px rgba(255,153,0,0.5);
 }
 
-/* // Common button style for filter/search buttons */
 .filter-btn {
   background-color: #969fa7;
   color: white;
@@ -202,7 +488,6 @@ body {
   background-color: #005bb5;
 }
 
-/* // Login button */
 .login {
   background-color: #0074d9;
   color: #fff;
@@ -221,7 +506,6 @@ body {
   cursor: pointer;
 }
 
-/* // Optional: Filter button alternative style (if used separately) */
 .filter {
   margin: 10px;
   cursor: pointer;
@@ -238,32 +522,11 @@ body {
   box-shadow: 0 0 3px 1px rgba(255,153,0,0.5);
 }
 
-/* // Shimmer Effect Placeholder Card */
-/*
-.shimmer-card {
-  width: 250px;
-  height: 150px;
-  border: 1px solid #ddd;
-  margin: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: #fff;
-  transition: transform 0.2s ease;
-  font-family: Arial, sans-serif;
-}
 
-.shimmer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
- /* Shimmer effect card */
-/* Shimmer card style */
-/* Shimmer card size and layout */
+
 .shimmer-card {
-  width: 250px; /* Same as the restaurant card */
-  height: 350px; /* Slightly larger than the restaurant card to resemble the restaurant card size */
+  width: 250px; 
+  height: 350px; 
   margin: 10px;
   padding: 15px;
   border-radius: 12px;
@@ -278,7 +541,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Shimmer animation */
+
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -288,11 +551,12 @@ body {
   }
 }
 
-/* Shimmer container layout */
+
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   gap: 20px; /* Space between shimmer cards */
-}
+
+
