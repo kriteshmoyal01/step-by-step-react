@@ -222,3 +222,77 @@
     padding: 8px 16px;
   }
 }
+.user-card {
+  flex: 1 1 100%;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-card h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #2d3436;
+}
+
+.user-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.user-info-block {
+  flex: 1 1 200px;
+  background-color: #fafafa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 16px;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a span {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #555;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a[title="GitHub Profile"]:hover {
+  color: #24292e;
+}
+
+.social-links a[title="LinkedIn Profile"]:hover {
+  color: #0077b5;
+}
+
+.social-links a[title="Send Email"]:hover {
+  color: #d44638;
+}
