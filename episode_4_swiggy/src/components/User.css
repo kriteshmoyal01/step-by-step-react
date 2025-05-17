@@ -1,0 +1,87 @@
+.user-card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.user-card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.user-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.user-info-block {
+  flex: 1 1 45%; /* Adjusted to fit two per row */
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-size: 14px;
+  text-align: center; /* Centering text */
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.button-row button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-row button:hover {
+  background-color: #0056b3;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px; /* Added spacing */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Increased gap for better spacing */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+ 
+.social-links svg {
+  font-size: 24px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  .user-info-block {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}

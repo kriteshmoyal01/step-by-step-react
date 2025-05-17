@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./About.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import "./User.css"; 
 
 const User = (props) => {
   const {
@@ -20,7 +20,7 @@ const User = (props) => {
 
   return (
     <div className="user-card">
-      <h3>Developer USER</h3>
+      {/* <h3>Developer USER (Functional Component)</h3> */}
       <div className="user-info-row">
         <div className="user-info-block"><strong>Count 1:</strong> {count}</div>
         <div className="user-info-block"><strong>Count 2:</strong> {count2}</div>
@@ -35,38 +35,21 @@ const User = (props) => {
         <div className="user-info-block"><strong>Email:</strong> {email}</div>
       </div>
 
-      {/* Count Buttons */}
-      <div className="social-links">
+      <div className="button-row">
         <button onClick={() => setCount(count + 1)}>Increment Count 1</button>
         <button onClick={() => setCount2(count2 + 1)}>Increment Count 2</button>
       </div>
 
-      {/* Social Links */}
       <div className="social-links">
-        <a
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Send Email"
-        >
+        <a href={`mailto:${email}`} target="_blank" rel="noreferrer" title="Send Email">
           <FaEnvelope />
           <span>Gmail</span>
         </a>
-        <a
-          href="https://github.com/kriteshmoyal01"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub Profile"
-        >
+        <a href="https://github.com/kriteshmoyal01" target="_blank" rel="noreferrer" title="GitHub Profile">
           <FaGithub />
           <span>GitHub</span>
         </a>
-        <a
-          href="https://www.linkedin.com/in/kritesh-moyal/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn Profile"
-        >
+        <a href="https://www.linkedin.com/in/kritesh-moyal/" target="_blank" rel="noreferrer" title="LinkedIn Profile">
           <FaLinkedin />
           <span>LinkedIn</span>
         </a>
