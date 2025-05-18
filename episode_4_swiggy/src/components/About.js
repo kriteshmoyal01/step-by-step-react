@@ -1,12 +1,26 @@
 import React from "react";
 import "./About.css";
 import { FaFacebook, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
-import User from "./User";
+import User from "./Users";
 import UserClass from "./UserClass";
-
+import Users from "./Users";
 
 class AboutClass extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "Welcome to About Class Component!"
+    };
+    console.log("AboutClass Constructor");
+  }
+
+  componentDidMount() {
+    console.log("AboutClass Component Did Mount");
+    // You can make API calls here if needed
+  }
+
   render() {
+    console.log("AboutClass Render");
     return (
       <div>
         <h1>About Class Component</h1>
@@ -45,7 +59,7 @@ const About = () => {
           I love blending technology with taste to create seamless and engaging digital experiences.
         </p>
         <div className="profile-section app-container">
-          <User {...userData} />
+          <Users {...userData} />
           <UserClass {...userData} />
         </div>
         <div className="contact-info">

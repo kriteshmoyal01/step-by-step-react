@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./User.css"; 
 
-const User = (props) => {
+const Users = (props) => {
   const {
     name,
     age,
@@ -17,6 +17,12 @@ const User = (props) => {
 
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(1);
+
+useEffect(() => {
+ 
+}, []);
+
+
 
   return (
     <div className="user-card">
@@ -58,4 +64,4 @@ const User = (props) => {
   );
 };
 
-export default User;
+export default Users;

@@ -4,9 +4,10 @@ import Shimmer from './Shimmer';
 import { MENU_URL } from '../utils/constant';
 
 const RestaurantMenu = () => {
-    const [menuData, setMenuData] = useState(null);
-    const [error, setError] = useState(null);
+    
     const { resId } = useParams();
+
+    const resId = useRestaurant(resId);
 
     useEffect(() => {
         fetchMenu();
