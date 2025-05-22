@@ -1,23 +1,26 @@
 import { useEffect, useState } from "react";
+import { MENU_URL } from "../utils/constant";
 
 const useRestaurantMenu = (resId) => {
   const [menuData, setMenuData] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    const fetchMenu = async () => {
+      try {
+        const response = await fetch(`${MENU_URL}${resId}`);
+        if (!response.ok) throw new Error("Failed to fetch menu");
+        const json = await response.json();
+        setMenuData(json.data);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
 
-  const fetchData = async () => {
-    try {
-      const response = await fetch(`https://api.example.com/menu/${resId}`);
-      const json = await response.json();
-      setMenuData(json.data); // Adjust according to actual API structure
-    } catch (error) {
-      console.error("Failed to fetch menu:", error);
-    }
-  };
+    if (resId) fetchMenu();
+  }, [resId]);
 
-  return menuData;
+  return { menuData, error };
 };
 
 export default useRestaurantMenu;
